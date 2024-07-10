@@ -216,12 +216,25 @@ var className = element.getAttribute('class');  // Retrieves class attribute val
 
 10. document.createElement(value)
 Create an html element
+```javascript
+var newDiv = document.createElement('div');  // Create a new <div> element
+```
 
 11. document.deleteChildt(value)
 Deletes a html element
+```javascript
+var parent = document.getElementById('parentElement');
+var child = document.getElementById('childElement');
+parent.removeChild(child);
+```
 
 12. document.appendChild(value)
 Append a html element
+```javascript
+var parent = document.getElementById('parentElement');
+var newChild = document.createElement('div');
+parent.appendChild(newChild);
+```
 
 13. document.replaceChild(new, old)
 Replace a html element
