@@ -204,6 +204,8 @@ The `rowspan` attribute allows a `<td>` or `<th>` element to span multiple rows.
 
 ```
 
+---
+
 ## 4. HTML Comments
 
 HTML comments are used to insert notes or explanations in the code that are not visible to users. Comments help developers understand and maintain the code.
