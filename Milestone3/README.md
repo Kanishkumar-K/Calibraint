@@ -204,6 +204,35 @@ The `rowspan` attribute allows a `<td>` or `<th>` element to span multiple rows.
 
 ```
 
+## 4. HTML Comments
+
+HTML comments are used to insert notes or explanations in the code that are not visible to users. Comments help developers understand and maintain the code.
+
+### Syntax
+
+```html
+<!-- This is a comment -->
+```
 ---
 
+## 5. Accessibility:
+Accessibility in HTML ensures that web content is usable by people with disabilities. It involves using semantic HTML, ARIA (Accessible Rich Internet Applications) attributes, and best practices to improve the accessibility of web page
 
+- Semantic HTML uses elements that provide meaning and context to the content, making it more accessible and easier to understand.
+  
+- ARIA attributes provide additional information to assistive technologies, enhancing the accessibility of dynamic content and complex UI components.
+
+  # Common ARIA Attributes
+
+| Attribute Name    | Description                                                                       |
+|-------------------|-----------------------------------------------------------------------------------|
+| `aria-label`      | Provides an accessible name for an element.                                       |
+| `aria-hidden`     | Indicates whether an element is visible or hidden.                                |
+| `aria-disabled`   | Indicates that an element is perceivable but disabled.                            |
+| `aria-expanded`   | Indicates whether an element is expanded or collapsed.                            |
+| `aria-haspopup`   | Indicates the availability and type of interactive popup element.                 |
+| `aria-invalid`    | Indicates the entered value does not conform to the expected format.              |
+| `aria-orientation`| Indicates whether the element's orientation is horizontal, vertical, or undefined.|
+| `aria-readonly`   | Indicates that the element is not editable, but is otherwise operable.            |
+| `aria-required`   | Indicates that user input is required before submission.                          |
+| `aria-selected`   | Indicates the current "selected" state of various widgets.                        |
