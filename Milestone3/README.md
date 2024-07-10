@@ -1,4 +1,4 @@
-# HTML Lists
+# 1. HTML Lists
 HTML lists allows to group a set of related items one by one.
 
 ## Unordered List
@@ -38,7 +38,7 @@ A description list consists of terms and their associated descriptions. It is re
 </dl>
 ```
 
-# HTML Forms
+# 2. HTML Forms
 
 HTML forms are used to collect user input on web pages. They consist of various form elements that allow users to enter data, which is then sent to a server for processing.
 
@@ -101,10 +101,109 @@ Different ways to get user input in a form
 
 ---
 
-## HTML tables
+## 3. HTML tables
 
 The `<table>` tag is used to create a table in HTML. It contains the entire table structure including headers, rows, and data cells.
 
+### Table elements:
 
+## `<thead>`
+
+The `<thead>` element defines the header section of a table. It contains one or more `<tr>` (table row) elements.
+
+```html
+<thead>
+    <tr><th>Header 1</th><th>Header 2</th></tr>
+</thead>
+```
+
+## `<tbody>`
+
+The `<tbody>` element defines the body section of a table, containing the main content. It includes one or more `<tr>` elements.
+```html
+<tbody>
+    <tr><td>Data 1</td><td>Data 2</td></tr>
+</tbody>
+```
+
+
+## `<tfoot>`
+
+The `<tfoot>` element defines the footer section of a table. It contains one or more `<tr>` elements and is usually used for summary or total rows.
+```html
+<tfoot>
+    <tr><td>Footer 1</td><td>Footer 2</td></tr>
+</tfoot>
+```
+
+## `<tr>`
+
+The `<tr>` element defines a table row. It can be used inside `<thead>`, `<tbody>`, or `<tfoot>`.
+```html
+<tr>
+    <td>Row Data</td><td>Row Data</td>
+</tr>
+```
+
+## `<th>`
+
+The `<th>` element defines a header cell in a table. It is used within a `<tr>` element and typically resides inside `<thead>` or `<tfoot>`.
+```html
+<th>Header Cell</th>
+```
+
+## `<td>`
+
+The `<td>` element defines a standard data cell in a table. It is used within a `<tr>` element, usually inside `<tbody>`.
+```html
+<td>Data Cell</td>
+```
+
+## `<caption>`
+
+The `<caption>` element provides a title or caption for the table, giving a brief description of the table’s contents.
+```html
+<caption>Table Title</caption>
+```
+
+## `<colgroup>`
+
+The `<colgroup>` element is used to group one or more `<col>` elements, which define the column properties for the table.
+```html
+<colgroup>
+    <col span="2" style="background-color: #f2f2f2;">
+</colgroup>
+```
+
+## `<col>`
+
+The `<col>` element specifies column properties for each column within a `<colgroup>`. It is used to apply styles or attributes to entire columns.
+```html
+<col span="2" style="background-color: #f2f2f2;">
+```
+
+## Attributes
+```html
+<thead>
+    <tr><th>Header 1</th><th>Header 2</th></tr>
+</thead>
+```
+
+### `colspan`
+
+The `colspan` attribute allows a `<td>` or `<th>` element to span multiple columns.
+```html
+<td colspan="2">Spanning Columns</td>
+```
+
+### `rowspan`
+
+The `rowspan` attribute allows a `<td>` or `<th>` element to span multiple rows.
+```html
+<td rowspan="2">Spanning Rows</td>
+
+```
+
+---
 
 
