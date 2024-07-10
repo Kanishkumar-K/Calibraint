@@ -291,7 +291,7 @@ document.getElementById('nestedElement').addEventListener('click', function(even
     console.log('Click event stopped bubbling at nestedElement.');
 });
 ```
-# Event Delegation
+## Event Delegation
 
 Event delegation is a technique where a single event listener is attached to a parent element to manage events for multiple child elements that may be dynamically added or removed.
 
@@ -302,7 +302,7 @@ document.getElementById('parentElement').addEventListener('click', function(even
     }
 });
 ```
-# Event Propagation
+## Event Propagation
 
 Event propagation refers to the flow of events through the DOM tree. Events can propagate in two phases: capturing phase and bubbling phase.
 
@@ -312,7 +312,7 @@ document.getElementById('parentElement').addEventListener('click', function(even
 }, true); // true for capturing phase
 ```
 
-# Preventdefault():
+## Preventdefault():
 The event.preventDefault() method stops the default action of an element from happening.
 
 ```javascript
