@@ -208,9 +208,10 @@ element.setAttribute('class', 'newClass');  // Sets class attribute
 
 10. element.getAttribute(id):
  Retrieve the value of an attribute on the element.
+```javascript
 var element = document.getElementById('myElement');
 var className = element.getAttribute('class');  // Retrieves class attribute value
-
+```
 ---
 ### Element creation and manipulation:
 
