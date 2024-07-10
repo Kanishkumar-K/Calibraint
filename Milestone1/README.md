@@ -5,6 +5,7 @@ Internet is a global network of interconnected computers and other devices that 
 Internet is called a network as it creates a network by connecting computers and servers across the world using routers, switches and telephone lines, and other communication devices and channels.
 
 ---
+
 ##  Types of Network
 
 ### a. Personal Area Network (PAN)
