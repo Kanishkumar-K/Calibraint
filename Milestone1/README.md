@@ -2,6 +2,7 @@
 
 # 1. INTERNET
 Internet is a global network of interconnected computers and other devices that communicate with each other using communication protocols.
+
 Internet is called a network as it creates a network by connecting computers and servers across the world using routers, switches and telephone lines, and other communication devices and channels.
 
 
@@ -33,7 +34,7 @@ Internetworking is the process of connecting multiple distinct networks to creat
 
 | Type      | Description                                                                                          |
 |-----------|------------------------------------------------------------------------------------------------------|
-| Intranet  | An intranet is a private network accessible only to an organization's staff. It uses internet technologies (such as web browsers and servers) but is isolated from the public internet. |
+| Intranet  | An intranet is a private network accessible only to an organization's staff. It uses internet technologies but is isolated from the public internet. |
 | Extranet  | An extranet extends an intranet to allow access to external partners, customers, or suppliers. It still restricts access to authorized users but provides broader connectivity than an intranet. |
 | Internet  | The internet is a global network of interconnected computers and networks that is publicly accessible. It uses standardized communication protocols to enable worldwide communication and data exchange. |
 ---
@@ -45,7 +46,7 @@ Internetworking is the process of connecting multiple distinct networks to creat
 Transmission Control Protocol (TCP) is a connection-oriented protocol for communications that facilitates the exchange of messages between different devices over a network. It operates at the transport layer of the OSI model.
 
 ### UDP (User Datagram Protocol)
-User Datagram Protocol (UDP) is a transport layer protocol in the Internet Protocol suite (UDP/IP). Unlike TCP, UDP is unreliable and connectionless, meaning it does not establish a connection before data transfer. It is commonly used for applications where speed and efficiency are more critical than reliability, such as real-time video or audio streaming.
+User Datagram Protocol (UDP) is a transport layer protocol in the Internet Protocol suite (UDP/IP). Unlike TCP, UDP is unreliable and connectionless, meaning it does not establish a connection before data transfer.
 
 ---
 
@@ -172,9 +173,9 @@ They describe what kind of actions does it do
 HTTP status codes are three-digit responses from the server to the browser-side request.
 | Code | Description                                           |
 |------|-------------------------------------------------------|
-| 100  | Informational - The server has received the initial part of the request and expects to continue processing. |
+| 100  | Informational - Continue, Switching protocols, Early hints |
 | 200  | Success - The request has succeeded.                       |
-| 300  | Redirectional - The requested resource has multiple options for representation, each with its own specific location. |
+| 300  | Redirectional - The requested resource has been redirected. |
 | 400  | Client Side Error - The server cannot process the request due to client error syntax. |
 | 500  | Internal Server Error - The server encountered an unexpected condition that prevented it from fulfilling the request. |
 
@@ -186,10 +187,12 @@ HTTP status codes are three-digit responses from the server to the browser-side 
    - Basic authentication involves sending the username and password in an encoded base64 format with each request. It is simple to implement but less secure compared to other methods.
 
 2. **Token-Based Authentication**:
-   - Token-based authentication exchanges a token (a unique identifier) with each request instead of username and password. It is commonly used in APIs and SPAs for session management.
-
+   - Token-based authentication exchanges a token with each request instead of username and password. It is commonly used in APIs for session management.
+     Example. JWT token (refresh token, access token)
+        
 3. **Digest Authentication**:
-   - Digest authentication improves security by hashing passwords before sending them over the network. It uses a challenge-response mechanism but is less widely supported than basic authentication.
+   - Digest authentication improves security by hashing passwords before sending them over the network.
+     Example: Message Digest (MD5 algorithm)
 ---
 
 ### Versions of HTTP
@@ -204,7 +207,7 @@ HTTP status codes are three-digit responses from the server to the browser-side 
    - **Description**: HTTP/2 is a major revision of the HTTP protocol designed to improve speed and efficiency of web communications.
 
 4. **HTTP/3**:
-   - **Description**: HTTP/3 is the latest version, and is based on Google's QUIC protocol. It aims to further optimize performance and security over HTTP/2.
+   - **Description**: HTTP/3 is the latest version, and is based on **Google's QUIC protocol.** It aims to further optimize performance and security over HTTP/2.
 
 ---
 # 3. DOMAIN NAME
@@ -218,16 +221,16 @@ A domain name is a human-readable address used to access websites on the Interne
 1. **Top Level Domains (TLD)**:
    - **Description**: Highest level in the DNS hierarchy, often referred to as extensions.
    - **Types**:
-     - **Country Code Top Level Domain (ccTLDs)**: Two-letter domains for specific countries (e.g., .in for India, .us for United States).
-     - **Generic Top Level Domains (gTLDs)**: Open for registration to all users, regardless of citizenship or location (e.g., .com, .net, .org, .edu).
+     - **Country Code Top Level Domain**: Two-letter domains for specific countries (e.g., .in for India, .us for United States).
+     - **Generic Top Level Domains**: Open for registration to all users, regardless of citizenship or location (e.g., .com, .net, .org, .edu).
 
 2. **Second Level Domain**:
    - **Description**: Located directly below the TLD in the DNS hierarchy.
-   - **Example**: In example.co.in, "co" is the second-level domain under ".in" (a ccTLD).
+   - **Example**: In example.co.in, "co" is the second-level domain under ".in"
 
 3. **Third Level Domain**:
    - **Description**: Located directly below the second-level domain.
-   - **Example**: In mail.yahoo.co.in, "yahoo" is the third-level domain under "co" which is under ".in" (a ccTLD).
+   - **Example**: In mail.yahoo.co.in, "yahoo" is the third-level domain under "co" which is under ".in" 
 
 4. **Sub-domain**:
    - **Description**: Part of a higher-level domain name.
@@ -235,24 +238,25 @@ A domain name is a human-readable address used to access websites on the Interne
 
 ---
 # 4. HOSTING
-Hosting refers to the service that allows individuals and organizations to make their website accessible via the World Wide Web. It involves storing website files and data on a server connected to the internet, ensuring that visitors can access the site at any time.
+Hosting refers to the service that allows individuals and organizations to make their website accessible via the World Wide Web. 
+It involves storing website files and data on a server connected to the internet, ensuring that visitors can access the site at any time.
 
 ### Hosting Types
 
 1. **Shared Hosting**:
-   - Multiple websites share the same server resources (CPU, RAM, disk space).
+   - Multiple websites **share the same server resources** (CPU, RAM, disk space).
    - Cost-effective option suitable for beginners and small websites.
 
 2. **Virtual Private Server (VPS) Hosting**:
-   - Virtual server created by partitioning a physical server, providing dedicated resources.
+   - **Virtual servers created by partitioning a single physical server**, providing dedicated resources.
    - Offers more control and scalability compared to shared hosting.
 
 3. **Cloud Hosting**:
    - Uses a network of virtual servers to deliver scalable and flexible hosting resources.
-   - High reliability and performance with pay-as-you-go pricing model.
+   - High reliability and performance with **pay-as-you-go pricing model and on demand delivery of IT resources**.
 
 4. **Dedicated Hosting**:
-   - Entire physical server dedicated to a single customer, providing full control over resources.
+   - **Entire physical server dedicated to a single customer**, providing full control over resources.
    - Ideal for websites requiring high performance, security, and customization.
 
 ---
@@ -289,13 +293,14 @@ DNS records are text instructions stored on DNS servers. They indicate the IP ad
 ---
 # 6. BROWSER:
 
-A browser, short for web browser, is a software application used to access and view information on the World Wide Web. It interprets and renders web pages written in HTML, CSS, and JavaScript, allowing users to navigate websites, interact with content, and access various online resources.
+Interprets and renders web pages written in HTML, CSS, and JavaScript, allowing users to navigate websites, interact with content, and access various online resources.
 
 ### Working of a browser:
 
 A web browser is a software application installed on a client computer that enables users to access information across the internet. It operates on a client-server model, where the browser acts as the client and communicates with web servers to retrieve and display web pages.
 
-The browser interacts with web servers using the HTTP protocol.
+The browser interacts with web servers using the **HTTP protocol**.
+
 1. **Requesting Information**: The browser sends requests to web servers via HTTP or HTTPS protocols. 
 
 2. **Receiving and Rendering Data**: Upon receiving a response from the server, typically in the form of HTML documents, it renders this code into a user-readable format.
