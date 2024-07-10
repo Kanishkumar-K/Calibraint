@@ -1,3 +1,43 @@
+# HTML Lists
+HTML lists allows to group a set of related items one by one.
+
+## Unordered List
+
+An unordered list is a list of items where the order of the items does not matter. It is represented by the ul tag.
+
+```html
+<ul>
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Bananas</li>
+</ul>
+```
+## Ordered List
+
+An ordered list is a list of items where each item is sequentially numbered. It is represented by the ol tag.
+
+```html
+<ol>
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Bananas</li>
+</ol>
+```
+
+## Description List
+A description list consists of terms and their associated descriptions. It is represented by the dl tag, with dt for terms and dd for descriptions.
+
+```html
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    <dt>JS</dt>
+    <dd>JavaScript</dd>
+</dl>
+```
+
 # HTML Forms
 
 HTML forms are used to collect user input on web pages. They consist of various form elements that allow users to enter data, which is then sent to a server for processing.
@@ -57,6 +97,14 @@ Different ways to get user input in a form
 | `<input type="date">`     | Date input field.                                              | `<input type="date" id="birthday" name="birthday">`     |
 | `<input type="time">`     | Time input field.                                              | `<input type="time" id="meeting-time" name="meeting-time">` |
 | `<input type="color">`    | Color picker input field.                                      | `<input type="color" id="color" name="color">`          |
+
+
+---
+
+## HTML tables
+
+The `<table>` tag is used to create a table in HTML. It contains the entire table structure including headers, rows, and data cells.
+
 
 
 
