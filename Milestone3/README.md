@@ -218,7 +218,7 @@ HTML comments are used to insert notes or explanations in the code that are not 
 ---
 
 ## 5. Accessibility:
-Accessibility in HTML ensures that web content is usable by people with disabilities. It involves using semantic HTML, ARIA (Accessible Rich Internet Applications) attributes, and best practices to improve the accessibility of web page
+Accessibility in HTML involves using semantic HTML, ARIA (Accessible Rich Internet Applications) attributes, and best practices to improve the accessibility of web page
 
 - Semantic HTML uses elements that provide meaning and context to the content, making it more accessible and easier to understand.
   
