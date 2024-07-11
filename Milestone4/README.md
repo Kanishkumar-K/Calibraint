@@ -156,9 +156,498 @@ The @import directive allows you to include the content of one file in another.
 
 ```scss
 @import 'filename';
+
+Sass String functions:
 ```
 
 ## Sass @mixin
 
+Sass mixin used to define reusuable styling components.
+
+## Sss @extend
+
+The @extend directive lets you share a set of CSS properties from one selector to another.
 
 
+---
+
+## Sass String Functions
+
+Functions used to deal with strings
+
+| Function                      | Description                                | Example                                    | Result                    |
+|-------------------------------|--------------------------------------------|--------------------------------------------|---------------------------|
+| `quote(string)`               | Adds quotes to string.                     | `quote("Hello world!")`                    | `"Hello world!"`          |
+| `str-index(string, substring)`| Index of the first occurrence of substring.| `str-index("Hello world!", "H")`           | `1`                       |
+| `str-insert(string, insert, index)` | Inserts string at index.                   | `str-insert("Hello world!", " wonderful", 6)`| `Hello wonderful world!`  |
+| `str-length(string)`          | Returns the length of the string.          | `str-length("Hello world!")`               | `12`                      |
+| `str-slice(string, start, end)` | Slices string from start to end.            | `str-slice("Hello world!", 2, 5)`          | `"ello"`                  |
+| `to-lower-case(string)`       | Converts string to lower case.             | `to-lower-case("Hello World!")`            | `"hello world!"`          |
+| `to-upper-case(string)`       | Converts string to upper case.             | `to-upper-case("Hello World!")`            | `"HELLO WORLD!"`          |
+| `unique-id()`                 | Generates a unique string.                 | `unique-id()`                              | `tyghefnsv`               |
+| `unquote(string)`             | Removes quotes around string.              | `unquote("Hello world!")`                  | `Hello world!`            |
+
+
+## Sass Numeric Functions
+
+Functions used to deal with numerical operations
+
+| Function                 | Description                              | Example Code                    | Result   |
+|--------------------------|------------------------------------------|---------------------------------|----------|
+| `abs(number)`            | Returns the absolute value of number.    | `abs(-15)`                      | `15`     |
+| `ceil(number)`           | Rounds number up to the nearest integer. | `ceil(15.20)`                   | `16`     |
+| `comparable(num1, num2)` | Checks if num1 and num2 are comparable.  | `comparable(15px, 10px)`        | `true`   |
+| `floor(number)`          | Rounds number down to the nearest integer. | `floor(15.80)`               | `15`     |
+| `max(number...)`         | Returns the highest value.               | `max(5, 7, 9, 0, -3, -7)`       | `9`      |
+| `min(number...)`         | Returns the lowest value.                | `min(5, 7, 9, 0, -3, -7)`       | `-7`     |
+| `percentage(number)`     | Converts number to a percentage.         | `percentage(1.2)`               | `120%`   |
+| `random()`               | Returns a random number between 0 and 1. | `random()`                      | `0.45673`|
+| `random(number)`         | Returns a random integer between 1 and number. | `random(6)`              | `4`      |
+| `round(number)`          | Rounds number to the nearest integer.    | `round(15.20)`                  | `15`     |
+
+## Sass List Functions
+
+The list functions are used to access values in a list, combine lists, and add items to lists.
+
+
+| Function                        | Description                                          | Example Code                                 | Result                        |
+|---------------------------------|------------------------------------------------------|----------------------------------------------|-------------------------------|
+| `append(list, value, [separator])` | Adds a value to the end of the list. Separator can be `auto`, `comma`, or `space`. | `append((a b c), d)`                         | `a b c d`                     |
+| `index(list, value)`            | Returns the index of the value in the list.          | `index(a b c, b)`                            | `2`                           |
+| `is-bracketed(list)`            | Checks if the list has square brackets.              | `is-bracketed([a b c])`                      | `true`                        |
+| `length(list)`                  | Returns the length of the list.                      | `length(a b c)`                              | `3`                           |
+| `list-separator(list)`          | Returns the list separator used, as a string.        | `list-separator(a b c)`                      | `"space"`                     |
+
+
+## Sass Map Functions
+
+In Sass, the map data type represents one or more key/value pairs.
+
+| Function                         | Description                                           | Example Code                                                                                             | Result                                                      |
+|----------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| `map-get(map, key)`              | Returns the value for the specified key in the map.   | `$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-get($font-sizes, "small")`          | `12px`                                                      |
+| `map-has-key(map, key)`          | Checks whether map has the specified key.             | `$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-has-key($font-sizes, "big")`        | `false`                                                     |
+| `map-keys(map)`                  | Returns a list of all keys in map.                    | `$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-keys($font-sizes)`                  | `"small", "normal", "large"`                                |
+
+
+---
+
+## 3.  Scss
+
+SCSS and SASS are both syntaxes of the SASS preprocessor
+
+SCSS (Sassy CSS) is a syntax of SASS, offering a more CSS-like syntax.
+
+It has the following properties
+    Variables
+    @mixins
+    @extend
+    Nesting
+
+| Feature         | SCSS                                      | Sass                                     |
+|-----------------|-------------------------------------------|------------------------------------------|
+| Syntax          | Uses curly braces `{}` and semicolons `;` | Uses indentation to separate code blocks |
+| Compatibility   | Every valid CSS file is a valid SCSS file | Requires specific Sass syntax            |
+| Readability     | Similar to standard CSS                   | More concise, fewer characters to write  |
+| File Extension  | `.scss`                                   | `.sass`                                  |
+
+
+## 4. CSS Properties
+
+## Height
+
+In CSS, `height` and `width` are properties used to define the dimensions of an element.
+
+- **Syntax of Height**: `height: value;`
+- 
+- **Values**:
+- 
+  - `auto`: Default value, element height adjusts based on content.
+  - `px`: Specifies height in pixels.
+  - `%`: Specifies height as a percentage of the parent element's height.
+  - `em`, `rem`: Relative units based on font-size.
+  - `vh`: Viewport height (1vh = 1% of the viewport height).
+
+**Example:**
+```css
+.element {
+    height: 200px; /* Fixed height in pixels */
+}
+```
+
+   
+## Width
+
+- **Syntax of Width**: `width: value;`
+- 
+- **Values**:
+- 
+  - `auto`: Default value, element height adjusts based on content.
+  - `px`: Specifies height in pixels.
+  - `%`: Specifies height as a percentage of the parent element's height.
+  - `em`, `rem`: Relative units based on font-size.
+  - `vw`: Viewport Width (1vh = 1% of the viewport width).
+
+**Example:**
+```css
+.element {
+    width: 200px; /* Fixed height in pixels */
+}
+```
+
+---
+## Max width
+
+In CSS, `max-width` specifies the maximum width an element can take before it starts to overflow. 
+
+```css
+.element {
+    max-width: 600px; /* Limits the width to 600 pixels */
+}
+```
+
+---
+
+## CSS Border
+
+It is used to create border to the webpage
+
+## Border Styles in css:
+
+| Value   | Description                                      |
+|---------|--------------------------------------------------|
+| `dotted`| Defines a dotted border                           |
+| `dashed`| Defines a dashed border                           |
+| `solid` | Defines a solid border                            |
+| `double`| Defines a double border                           |
+| `groove`| Defines a 3D grooved border                       |
+| `ridge` | Defines a 3D ridged border                        |
+| `inset` | Defines a 3D inset border                         |
+| `outset`| Defines a 3D outset border                        |
+| `none`  | Defines no border                                 |
+| `hidden`| Defines a hidden border                           |
+
+
+Example:
+
+```css
+.element {
+    border: 2px ridge #ccc; 
+}
+```
+---
+
+## CSS Background
+
+The background peroperty adds background effects to the element
+
+## CSS Background Properties
+
+### 1 `background-color`
+- **Definition**: Sets the background color of an element.
+- **Example**: 
+  ```css
+  .example {
+      background-color: #f0f0f0; /* Light gray background */
+  }
+  ```
+
+### 2 `background-image`
+- **Definition**: Sets one or more background images for an element.
+- **Example**: 
+```css
+.example {
+    background-image: url('background.jpg'); /* Sets a background image */
+}
+ ```
+      
+### 3 `background-repeat`
+- **Definition**:  Specifies how background images should repeat.
+- **Example**: 
+```css
+.example {
+    background-repeat: no-repeat; /* Prevents background image from repeating */
+}
+ ```
+
+### 4 `background-attachment`
+- **Definition**: Specifies whether a background image is fixed or scrolls with the content.
+- **Example**: 
+```css
+.example {
+    background-attachment: fixed; /* Fixes the background image in place */
+}
+ ```
+
+### 5 `background-position`
+- **Definition**: Sets the starting position of background images.
+```css
+.example {
+    background-position: center top; /* Positions background image at the top center */
+}
+```
+
+---
+
+## CSS Box Model
+
+In CSS, every element is considered as a rectangular box. 
+The CSS box model describes the space that surrounds an HTML element, including its content, padding, border, and margin.
+
+### Components of the Box Model:
+
+1. **Content**: The actual content of the element, where text and images appear.
+
+2. **Padding**: Clears an area around the content. The padding is transparent.
+
+3. **Border**: A border that goes around the padding and content.
+
+4. **Margin**: Clears an area outside the border. The margin is transparent.
+
+
+```css
+div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+```
+
+## CSS Margin
+
+
+In CSS, `padding` is properties used to control the space around  elements, respectively.
+
+### `margin`
+
+- **Definition**: Sets the space outside an element's border.
+- 
+- **Example**: 
+  ```css
+  .example {
+      margin: 10px; /* Applies 10 pixels of margin to all sides */
+  }
+
+## CSS Padding
+
+In CSS, `padding` is a property used to create space around an element's content, inside the element's border.
+
+### Definition
+
+The `padding` property controls the amount of space between the content of an element and its border.
+
+### Syntax
+
+```css
+selector {
+    padding: value;
+}
+```
+
+## CSS Fonts
+
+CSS provides several properties to style fonts and text within HTML elements.
+
+## 1. `font-family`
+
+### Definition
+The `font-family` property specifies the font family for text. It allows you to define a prioritized list of font family names or generic family names.
+
+
+### Example
+```css
+body {
+  font-family: "Arial", sans-serif;
+}
+```
+### Generic Font Families
+
+In CSS there are five generic font families:
+
+- Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+- Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+- Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+- Cursive fonts imitate human handwriting.
+- Fantasy fonts are decorative/playful fonts.
+
+---
+### Web safe fonts:
+
+Web safe fonts are fonts that are widely available across different operating systems and devices. Here are some commonly used web safe fonts:
+
+- Arial
+- Helvetica
+- Times New Roman
+- Georgia
+- Courier New
+- Verdana
+
+---
+
+## CSS Font Size
+
+The `font-size` property in CSS sets the size of the text within HTML elements.
+
+## Absolute Size (Pixels - `px`)
+
+- Sets the text size to a specific pixel value.
+- Does not allow users to change text size in browsers, which can be a drawback for accessibility.
+  
+Example:
+```css
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 14px;
+}
+```
+
+## Relative Size ( em )
+
+Example:
+
+- Sets text size relative to its parent element.
+- Allows users to adjust text size in browsers, improving accessibility.
+
+```css
+h1 {
+  font-size: 2.5em; /* 40px / 16px = 2.5em */
+}
+
+p {
+  font-size: 0.875em; /* 14px / 16px = 0.875em */
+}
+
+```
+
+## Responsive Font Size (Viewport Width - vw)
+
+Example:
+- Sets text size relative to the viewport width.
+- Useful for responsive design, as text scales with the browser window size.
+
+```css
+h1 {
+  font-size: 5vw; /* 5% of viewport width */
+}
+
+p {
+  font-size: 2vw; /* 2% of viewport width */
+}
+
+```
+---
+
+## CSS Texts
+
+CSS offers several properties to style and manipulate text within HTML elements.
+
+## 1. Color (`color`)
+
+### Definition
+The `color` property sets the color of text.
+
+### Example
+```css
+p {
+  color: #333333; /* Dark gray */
+}
+```
+
+## 2. Alignment
+
+### Definition
+The text-align property aligns text horizontally within its container.
+
+### Example
+```css
+h1 {
+  text-align: center;
+}
+
+```
+
+## 3. Decorations
+
+### Definition
+The text-decoration property decorates text with underlines, overlines, etc.
+
+- text-decoration-line
+- text-decoration-color
+- text-decoration-style
+- text-decoration-thickness
+- text-decoration
+
+### Example
+```css
+a {
+  text-decoration: none; /* Removes underline from links */
+}
+
+```
+
+## 4. Transformation
+
+### Definition
+The text-transform property transforms text to uppercase, lowercase, etc.
+
+- uppercase
+- lowercase
+- capitalize
+
+### Example
+```css
+button {
+  text-transform: uppercase;
+}
+
+```
+
+## 5. Shadow
+
+### Definition
+The text-shadow property adds shadow effects to text.
+
+### Example
+```css
+h2 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+```
+
+---
+
+## CSS Image
+
+CSS offers several properties to style and control the display of images within HTML elements.
+
+## 1. Image Size (`width` and `height`)
+
+### Definition
+You can set the dimensions of an image using the `width` and `height` properties.
+
+### Example
+```css
+img {
+  width: 100px;
+  height: 100px;
+}
+```
+
+## 1. Image Alignment 
+
+### Definition
+You can set the dimensions of an image using the `width` and `height` properties.
+
+### Example
+```css
+img {
+  width: 100px;
+  height: 100px;
+}
+```
