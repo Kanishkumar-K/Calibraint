@@ -131,5 +131,34 @@ O/p : Green is globally declared
 
 ---
 
+##  Sass Nesting
+
+Many CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, text-transform and text-overflow.
+With Sass, we can write them as nested properties.
+
+```html
+font: {
+  family: Helvetica, sans-serif;
+  size: 18px;
+  weight: bold;
+}
+
+text: {
+  align: center;
+  transform: lowercase;
+  overflow: hidden;
+}
+```
+
+## Sass @import
+
+The @import directive allows you to include the content of one file in another.
+
+```scss
+@import 'filename';
+```
+
+## Sass @mixin
+
 
 
