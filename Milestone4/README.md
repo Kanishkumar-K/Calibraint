@@ -29,5 +29,43 @@ Inline CSS is added directly within the HTML tag using the `style` attribute.
     <p style="color: red;">This is a paragraph.</p>
 ```
 
+## 2. Internal CSS
+Internal CSS is placed within the <style> tag inside the <head> section of the HTML file.
+
+```html
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        p {
+            color: red;
+        }
+    </style>
+```
+
+## 3. External CSS
+ External CSS is stored in a separate CSS file and linked to HTML documents using the <link> tag.
+
+```html
+    <link rel="stylesheet" href="styles.css">
+
+styles.css
+
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: red;
+}
+
+```
 
 
