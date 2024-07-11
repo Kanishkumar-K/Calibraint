@@ -279,7 +279,7 @@ Alt attributes describe images to search engines and visually impaired users, im
 <img src="image.jpg" alt="Description of the image">
   ```
 
-  ## 5. UR Structure
+  ## 5. URL Structure
 
 Clean and descriptive URLs help search engines and users understand the page content.
 
@@ -304,4 +304,67 @@ Helps search engines understand the context of your content, which can enhance s
 }
 </script>
   ```
+---
+
+## HTML APIS
+
+##  1. Geolocation API:
+
+Retrieve the geographic location of a user.
+
+  ```html
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        console.log("Latitude: " + position.coords.latitude);
+        console.log("Longitude: " + position.coords.longitude);
+    });
+} 
+  ```
+
+## 2. Drag and Drop API
+
+Enable drag-and-drop functionality for elements.
+
+  ```html
+<div id="drag1" draggable="true" ondragstart="drag(event)">Drag me</div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+  ```
+
+## 3. Fetch API
+
+ Make HTTP requests to fetch resources.
+
+  ```html
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+```
+
+## 4. Web Storage API
+
+Store data locally in the browser
+
+  ```html
+localStorage.setItem("username", "JohnDoe");
+var user = localStorage.getItem("username");
+console.log(user);
+
+```
 ---
