@@ -238,3 +238,70 @@ Accessibility in HTML involves using semantic HTML, ARIA (Accessible Rich Intern
 | `aria-readonly`   | Indicates that the element is not editable, but is otherwise operable.            |
 | `aria-required`   | Indicates that user input is required before submission.                          |
 | `aria-selected`   | Indicates the current "selected" state of various widgets.                        |
+
+---
+
+## SEO
+
+SEO stands for “search engine optimization.” 
+In simple terms, SEO means the process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines.
+
+HTML plays a critical role in SEO as it helps search engines understand and rank the content of a webpage. 
+
+## 1. Title Tag
+
+The title tag defines the title of the webpage, which appears in the browser tab and is used by search engines as the primary indicator of the page’s content.
+
+  ```html
+  <title>Page Title</title>
+  ```
+
+## 2. Meta Description
+It defines the metadata about an HTML document.
+
+  ```html
+<meta name="description" content="Brief description of the page content.">
+  ```
+
+## 3. Header Tags
+
+Header tags structure the content and indicate its hierarchy, making it easier for search engines to understand the page.
+
+  ```html
+<H1> Heading </H1>
+  ```
+
+## 4. Alt text for Images
+
+Alt attributes describe images to search engines and visually impaired users, improving accessibility and SEO.
+
+  ```html
+<img src="image.jpg" alt="Description of the image">
+  ```
+
+  ## 5. UR Structure
+
+Clean and descriptive URLs help search engines and users understand the page content.
+
+  ```html
+https://www.example.com/seo-tips
+  ```
+
+  ## 6. Schema Markup
+Helps search engines understand the context of your content, which can enhance search results with rich snippets.
+
+  ```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Example Article",
+  "datePublished": "2024-07-11",
+  "author": {
+    "@type": "Person",
+    "name": "Author Name"
+  }
+}
+</script>
+  ```
+---
