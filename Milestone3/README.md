@@ -241,7 +241,7 @@ Accessibility in HTML involves using semantic HTML, ARIA (Accessible Rich Intern
 
 ---
 
-## SEO
+## 5. SEO
 
 SEO stands for “search engine optimization.” 
 In simple terms, SEO means the process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines.
@@ -306,7 +306,7 @@ Helps search engines understand the context of your content, which can enhance s
   ```
 ---
 
-## HTML APIS
+## 6.  HTML APIS
 
 ##  1. Geolocation API:
 
