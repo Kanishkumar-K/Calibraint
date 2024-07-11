@@ -1,4 +1,4 @@
-# CSS
+# 1. CSS
 
 CSS - Cascading Style Sheets.
 CSS is the language we use to style an HTML document.
@@ -67,5 +67,69 @@ p {
 }
 
 ```
+
+---
+
+# 2. SASS
+
+Sass is a CSS pre-processor
+Sass stands for Syntactically Awesome Stylesheet
+Sass reduces repetition of CSS and therefore saves time
+
+Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
+
+# Sass Variable
+
+- Variables are used to store a value.
+  
+Values can be 
+    strings
+    numbers
+    colors
+    booleans
+    lists
+    nulls
+
+Syntax : $variablename: value;
+
+Variable scope in Sass:
+
+Sass variables are only available at the level of nesting where they are defined.
+
+```html
+$myColor: red;
+
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+```
+O/p: Green has scope limited to h1 tag only.
+
+
+Sass !global:
+
+!global indicates that a variable is global, which means that it is accessible on all levels.
+
+```html
+$myColor: red;
+
+h1 {
+  $myColor: green !global;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}     
+```
+O/p : Green is globally declared
+
+---
+
 
 
