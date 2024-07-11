@@ -639,15 +639,42 @@ img {
 }
 ```
 
-## 1. Image Alignment 
+# CSS Display Property
 
-### Definition
-You can set the dimensions of an image using the `width` and `height` properties.
+The CSS `display` property determines how an element behaves in the document layout.
 
-### Example
+## Values:
+
+- **`block`**: Renders the element as a block-level element (e.g., `<div>`). Takes up the full width available.
+  
+- **`inline`**: Renders the element as an inline-level element (e.g., `<span>`). Occupies only as much width as necessary.
+  
+- **`inline-block`**: Combines features of inline and block elements. Allows setting width and height, and respects margins and padding.
+  
+- **`flex`**: Enables a flex container and lays out its direct children as flex items.
+  
+- **`grid`**: Enables a grid container and lays out its direct children as grid items.
+  
+- **`none`**: Hides the element from the layout (not from screen readers).
+
+- **`table`**: Renders the element as a block-level table element, similar to `<table>` in HTML.
+
+- **`inline-table`**: Renders the element as an inline-level table element, similar to `<table>` in HTML.
+
+- **`list-item`**: Renders the element as a block container with a list-item box inside (e.g., `<li>`).
+
+- **`inherit`**: Inherits the `display` value from its parent element.
+
+- **`initial`**: Sets the `display` property to its default value.
+
+- **`unset`**: Resets the `display` property to its inherited value if it inherits from its parent, otherwise sets it to its initial value.
+
+### Example:
+
 ```css
-img {
-  width: 100px;
-  height: 100px;
+.element {
+  display: block;
 }
 ```
+
+
