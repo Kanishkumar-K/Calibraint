@@ -179,5 +179,4 @@ CSS functions are used as a value for various CSS properties.
 | `rgba()`                      | Defines colors using the Red-Green-Blue-Alpha model (RGBA)               |
 | `var()`                       | Inserts the value of a custom property                                   |
 
-
-
+---
