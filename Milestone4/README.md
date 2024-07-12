@@ -629,7 +629,7 @@ Provides various display options for image (display: block;)
 ## 4. Image Shadow
 Adds a shadow effect to image ( box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); )
 
-
+---
 
 # CSS Display Property
 
