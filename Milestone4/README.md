@@ -404,7 +404,7 @@ The CSS box model describes the space that surrounds an HTML element, including 
 
 4. **Margin**: Clears an area outside the border. The margin is transparent.
    
-<img src="https://github.com/user-attachments/assets/34984bd1-9afd-4cf6-8d62-2b808434f07d" alt="WhatsApp Image" width="300" height="200">
+<img src="https://github.com/user-attachments/assets/34984bd1-9afd-4cf6-8d62-2b808434f07d" alt="WhatsApp Image" width="400" height="300">
 
 
 ```css
