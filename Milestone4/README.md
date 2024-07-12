@@ -468,9 +468,6 @@ In CSS there are five generic font families:
 
 - Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
 - Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
-- Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
-- Cursive fonts imitate human handwriting.
-- Fantasy fonts are decorative/playful fonts.
 
 ---
 ### Web safe fonts:
@@ -524,22 +521,6 @@ p {
 
 ```
 
-## Responsive Font Size (Viewport Width - vw)
-
-Example:
-- Sets text size relative to the viewport width.
-- Useful for responsive design, as text scales with the browser window size.
-
-```css
-h1 {
-  font-size: 5vw; /* 5% of viewport width */
-}
-
-p {
-  font-size: 2vw; /* 2% of viewport width */
-}
-
-```
 ---
 
 ## CSS Texts
@@ -638,6 +619,14 @@ img {
   height: 100px;
 }
 ```
+
+## 2. Image Border
+
+## 3. Image Display options
+
+## 4. Image Shadow
+
+
 
 # CSS Display Property
 
