@@ -58,6 +58,8 @@ There are four different combinators in CSS:
 - adjacent sibling selector (+)
 - general sibling selector (~)
 
+![WhatsApp Image 2024-07-12 at 11 26 47_e65fb6d5](https://github.com/user-attachments/assets/8a788aab-0470-490d-9060-80c1bc620460)
+
 
 ---
 
