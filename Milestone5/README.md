@@ -180,3 +180,19 @@ CSS functions are used as a value for various CSS properties.
 | `var()`                       | Inserts the value of a custom property                                   |
 
 ---
+
+# CSS Comments
+
+Comments in CSS can be used to explain code, make notes, or temporarily disable styles.
+
+## Example:
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* margin: 0; */
+}
+```
+
+---
