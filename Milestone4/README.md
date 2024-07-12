@@ -475,10 +475,8 @@ In CSS there are five generic font families:
 Web safe fonts are fonts that are widely available across different operating systems and devices. Here are some commonly used web safe fonts:
 
 - Arial
-- Helvetica
 - Times New Roman
 - Georgia
-- Courier New
 - Verdana
 
 ---
