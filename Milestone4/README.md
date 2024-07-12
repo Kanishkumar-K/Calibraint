@@ -403,6 +403,8 @@ The CSS box model describes the space that surrounds an HTML element, including 
 3. **Border**: A border that goes around the padding and content.
 
 4. **Margin**: Clears an area outside the border. The margin is transparent.
+   
+![WhatsApp Image 2024-07-12 at 11 51 49_55870aea](https://github.com/user-attachments/assets/34984bd1-9afd-4cf6-8d62-2b808434f07d)
 
 
 ```css
