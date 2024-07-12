@@ -4,7 +4,7 @@
 A CSS selector selects the HTML element(s) you want to style.
 
 **Types of selectors**:
-- Simple Selector
+- Element Selector
     Select an element and apply styling to it.
   
     ```html
@@ -101,6 +101,28 @@ selector::pseudo-element {
 
 
 ## ! important
+
+The !important rule in CSS is used to add more importance to a property/value than normal.
+
+```html
+#myid {
+  background-color: blue;
+}
+
+.myclass {
+  background-color: gray;
+}
+
+p {
+  background-color: red !important;
+}
+```
+
+The only way to override an !important rule is to include another !important rule on a declaration with the same (or higher) specificity 
+
+
+
+
 
 
 
