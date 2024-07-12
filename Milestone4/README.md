@@ -275,6 +275,16 @@ In CSS, `height` and `width` are properties used to define the dimensions of an 
 }
 ```
 
+## Max Height
+In CSS, `max-height` specifies the maximum height an element can take before it starts to overflow. 
+
+```css
+.element {
+    max-height: 300px; /* Set maximum height */
+    overflow: auto;    /* Add scrollbars if content overflows */
+}
+```
+
    
 ## Width
 
