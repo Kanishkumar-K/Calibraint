@@ -156,5 +156,29 @@ The inherit keyword in CSS explicitly sets a property value to be inherited from
 
 ---
 
+# CSS Functions
+
+CSS functions are used as a value for various CSS properties.
+
+| Function                      | Description                                                              |
+|-------------------------------|--------------------------------------------------------------------------|
+| `attr()`                      | Returns the value of an attribute of the selected element                |
+| `calc()`                      | Allows you to perform calculations to determine CSS property values      |
+| `conic-gradient()`            | Creates a conic gradient                                                 |
+| `counter()`                   | Returns the current value of the named counter                           |
+| `cubic-bezier()`              | Defines a Cubic Bezier curve                                             |
+| `hsl()`                       | Defines colors using the Hue-Saturation-Lightness model (HSL)            |
+| `hsla()`                      | Defines colors using the Hue-Saturation-Lightness-Alpha model (HSLA)     |
+| `linear-gradient()`           | Creates a linear gradient                                                |
+| `max()`                       | Uses the largest value, as the property value |
+| `min()`                       | Uses the smallest value, as the property value |
+| `radial-gradient()`           | Creates a radial gradient                                                |
+| `repeating-conic-gradient()`  | Repeats a conic gradient                                                 |
+| `repeating-linear-gradient()` | Repeats a linear gradient                                                |
+| `repeating-radial-gradient()` | Repeats a radial gradient                                                |
+| `rgb()`                       | Defines colors using the Red-Green-Blue model (RGB)                      |
+| `rgba()`                      | Defines colors using the Red-Green-Blue-Alpha model (RGBA)               |
+| `var()`                       | Inserts the value of a custom property                                   |
+
 
 
