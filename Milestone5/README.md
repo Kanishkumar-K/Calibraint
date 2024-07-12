@@ -7,17 +7,18 @@ A CSS selector selects the HTML element(s) you want to style.
 - Simple Selector
     Select an element and apply styling to it.
     
-- Multiple Selector
-  
+- Grouping Selector
+    Select multiple elements at a time and apply styling effects  
     
 - Class Selector
-
+    The selector .class is used to select the elements that belong to the specific class attribute.
     
 - Id Selector
-
+    The id selector uses the id attribute of an HTML element to select a specific element.
 
 - Universal Selector
-  
+      It applies the styling to all the elements
+
 
 ## CSS Combinators
 
