@@ -71,15 +71,36 @@ A pseudo-class is used to define a special state of an element.
       property: value;
     }
 
-# CSS Pseudo-Classes
+## CSS Pseudo-Classes
 
 | Pseudo-Class      | Description                                                              | Example                                                  |
 |-------------------|--------------------------------------------------------------------------|----------------------------------------------------------|
-| `:hover`          | Applies when the user designates an element (with some pointing device), but does not activate it. | ``` <br>button:hover { background-color: yellow; }<br>``` |
-| `:active`         | Applies while an element is being activated by the user.                | ```<br>a:active { color: red; }<br>```                 |
-| `:first-child`    | Applies to the first child of its parent.                                | ```<br>p:first-child { font-weight: bold; }<br>```     |
-| `:last-child`     | Applies to the last child of its parent.                                 | ```<br>p:last-child { color: green; }<br>```           |
-| `:root`           | Applies to the root element of a document.                               | ```<br>:root { --main-color: coral; }<br>```           |
+| `:hover`          | Applies when cursor moves to the element, but does not activate it. | ```button:hover { background-color: yellow; }``` |
+| `:active`         | Applies while an element is being activated by the user.                | ```a:active { color: red; }<br>```                 |
+| `:first-child`    | Applies to the first child of its parent.                                | ```p:first-child { font-weight: bold; }```     |
+| `:last-child`     | Applies to the last child of its parent.                                 | ```p:last-child { color: green; }```           |
+| `:root`           | Applies to the root element of a document.                               | ```:root { --main-color: coral; }```           |
+
+## CSS Pseudo Elements
+
+A CSS pseudo-element is used to style specified parts of an element.
+
+```html
+selector::pseudo-element {
+  property: value;
+}
+```
+
+| Pseudo-Element  | Description                                                           | Example                                                    |
+|-----------------|-----------------------------------------------------------------------|------------------------------------------------------------|
+| `::before`      | Inserts content before the content of selected elements.               | ```p::before { content: "Before text "; }```    |
+| `::after`       | Inserts content after the content of selected elements.                | ```p::after { content: " After text"; }```      |
+| `::first-line`  | Styles the first line of text within a selected element.               | ```p::first-line { color: blue; }```             |
+| `::first-letter`| Styles the first letter of the text within a selected element.         | ```p::first-letter { font-size: 150%; }```       |
+| `::selection`   | Styles the portion of an element that is selected by a user.           | ```::selection { background-color: yellow; color: black; }``` |
+
+
+## ! important
 
 
 
