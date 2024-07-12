@@ -462,9 +462,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 ```
-### Generic Font Families
-
-In CSS there are five generic font families:
+### Font Family
 
 - Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
 - Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
