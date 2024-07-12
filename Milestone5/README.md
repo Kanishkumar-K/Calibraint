@@ -22,7 +22,7 @@ A CSS selector selects the HTML element(s) you want to style.
     }
     
 - Class Selector
-    The selector .class is used to select the elements that belong to the specific class attribute.
+    The selector .class is used to select the elements (group) that belong to the specific class attribute.
 
   ```html
     .class1 {
@@ -125,6 +125,8 @@ The only way to override an !important rule is to include another !important rul
 
 <img src="https://github.com/user-attachments/assets/545ab9eb-4d33-4aa3-9ebc-3d24f1d95e15" alt="Image" height="700" width="600">
 
+---
+
 ## CSS Inheritance
 
 Inheritance is a property where the parent styling transferred to the child styling.
@@ -134,7 +136,25 @@ Inheritance is a property where the parent styling transferred to the child styl
 
 The inherit keyword in CSS explicitly sets a property value to be inherited from its parent element.
 
+```html
+ <style>
+        .parent {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .child {
+            color: inherit; 
+            font-size: inherit; 
+        }
+    </style>
+```
+
+### Inherited and Non Inherited Properties
+
 ![WhatsApp Image 2024-07-12 at 14 59 38_05996cec](https://github.com/user-attachments/assets/5df582b0-ea48-425e-9b98-6891c4e85e90)
+
+---
 
 
 
