@@ -164,7 +164,7 @@ Sass String functions:
 
 Sass mixin used to define reusuable styling components.
 
-## Sss @extend
+## Sass @extend
 
 The @extend directive lets you share a set of CSS properties from one selector to another.
 
