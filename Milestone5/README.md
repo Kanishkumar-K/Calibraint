@@ -152,8 +152,7 @@ The inherit keyword in CSS explicitly sets a property value to be inherited from
 
 ### Inherited and Non Inherited Properties
 
-![Image Description](https://github.com/user-attachments/assets/5df582b0-ea48-425e-9b98-6891c4e85e90){:width="50%"}
-
+![WhatsApp Image 2024-07-12 at 14 59 38_05996cec](https://github.com/user-attachments/assets/5df582b0-ea48-425e-9b98-6891c4e85e90)
 ---
 
 # CSS Functions
