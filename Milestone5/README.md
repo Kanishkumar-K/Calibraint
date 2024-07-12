@@ -5,10 +5,19 @@ A CSS selector selects the HTML element(s) you want to style.
 
 **Types of selectors**:
 - Simple Selector
+    Select an element and apply styling to it.
+    
 - Multiple Selector
+  
+    
 - Class Selector
+
+    
 - Id Selector
+
+
 - Universal Selector
+  
 
 ## CSS Combinators
 
