@@ -58,7 +58,6 @@ There are four different combinators in CSS:
 - adjacent sibling selector (+)
 - general sibling selector (~)
 
-![WhatsApp Image 2024-07-12 at 11 26 47_6ef27db7](https://github.com/user-attachments/assets/841416cf-02a3-42b4-9b3c-6a0e362018ca)
 
 ---
 
@@ -120,15 +119,22 @@ p {
 
 The only way to override an !important rule is to include another !important rule on a declaration with the same (or higher) specificity 
 
-
 ---
 
 ## CSS Specificity
 
-<img src="https://github.com/user-attachments/assets/545ab9eb-4d33-4aa3-9ebc-3d24f1d95e15" alt="Image" height="500" width="300">
+<img src="https://github.com/user-attachments/assets/545ab9eb-4d33-4aa3-9ebc-3d24f1d95e15" alt="Image" height="700" width="600">
+
+## CSS Inheritance
+
+Inheritance is a property where the parent styling transferred to the child styling.
 
 
+### inherit keyword
 
+The inherit keyword in CSS explicitly sets a property value to be inherited from its parent element.
+
+![WhatsApp Image 2024-07-12 at 14 59 38_05996cec](https://github.com/user-attachments/assets/5df582b0-ea48-425e-9b98-6891c4e85e90)
 
 
 
