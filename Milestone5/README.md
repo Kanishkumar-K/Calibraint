@@ -125,7 +125,7 @@ The only way to override an !important rule is to include another !important rul
 
 ## CSS Specificity
 
-<img src="https://github.com/user-attachments/assets/545ab9eb-4d33-4aa3-9ebc-3d24f1d95e15" alt="Image" height="300" width="400">
+<img src="https://github.com/user-attachments/assets/545ab9eb-4d33-4aa3-9ebc-3d24f1d95e15" alt="Image" height="500" width="300">
 
 
 
