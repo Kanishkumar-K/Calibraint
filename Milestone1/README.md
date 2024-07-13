@@ -3,7 +3,7 @@
 # 1. INTERNET
 Internet is a global network of interconnected computers and other devices that communicate with each other using communication protocols.
 
-Internet is called a network as it creates a network by connecting computers and servers across the world using routers, switches and telephone lines, and other communication devices and channels.
+Internet is called a network as it creates a network by connecting computers and servers across the world using routers, switches and other communication devices and channels.
 
 
 ##  Types of Network
@@ -133,8 +133,11 @@ To allow the React frontend to communicate with the Django backend, we should co
 # 2. HTTP
 HTTP stands for “Hypertext Transfer Protocol.” It is a set of rules for sharing data on the World Wide Web (WWW). HTTP helps web browsers and servers communicate, allowing people to access and share information over the internet.
 
-Client-Server Model: HTTP works on a request-response system. 
-Application Layer Protocol: HTTP operates within the Internet Protocol Suite
+Client-Server Model: 
+HTTP works on a request-response system. 
+
+Application Layer Protocol:
+HTTP operates within the Internet Protocol Suite
 
 ---
 **HTTP Request**: A client's request to a server for data exchange.
