@@ -58,7 +58,7 @@ There are four different combinators in CSS:
 - adjacent sibling selector (+)
 - general sibling selector (~)
 
-![WhatsApp Image 2024-07-12 at 11 26 47_e65fb6d5](https://github.com/user-attachments/assets/8a788aab-0470-490d-9060-80c1bc620460)
+![WhatsApp Image 2024-07-13 at 15 53 48_2c435111](https://github.com/user-attachments/assets/9acf2bd3-8dcf-4a77-b009-42de7f902f93)
 
 
 ---
@@ -125,7 +125,9 @@ The only way to override an !important rule is to include another !important rul
 
 ## CSS Specificity
 
-<img src="https://github.com/user-attachments/assets/545ab9eb-4d33-4aa3-9ebc-3d24f1d95e15" alt="Image" height="700" width="600">
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e93024a4-2293-4313-b93d-100c8244bae2" alt="Example Image" height="700" width="600">
+</p>
 
 ---
 
@@ -154,7 +156,21 @@ The inherit keyword in CSS explicitly sets a property value to be inherited from
 
 ### Inherited and Non Inherited Properties
 
-![WhatsApp Image 2024-07-12 at 14 59 38_05996cec](https://github.com/user-attachments/assets/5df582b0-ea48-425e-9b98-6891c4e85e90)
+- **Inherited Properties**: These properties are automatically inherited from the parent element to its child elements unless explicitly overridden.
+- **Non-Inherited Properties**: These properties are not inherited and must be explicitly defined for each element.
+
+
+| Inherited Properties   | Non-Inherited Properties   |
+|------------------------|----------------------------|
+| `color`                | `margin`                   |
+| `font-family`          | `padding`                  |
+| `font-size`            | `border`                   |
+| `font-weight`          | `width`                    |
+| `font-style`           | `height`                   |
+| `text-align`           | `display`                  |
+| `text-indent`          | `position`                 |
+| `line-height`          | `z-index`                  |
+
 ---
 
 # CSS Functions
