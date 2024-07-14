@@ -15,8 +15,48 @@ An XHTML document must have an XHTML <!DOCTYPE> declaration.
 It uses Document Type Definitions (DTDs) to define the structure and rules for the markup. XHTML supports three types of DTDs:
 
 1. Strict DTD: This does not allow deprecated elements and attributes.
-2. Transitional DTD: This allows deprecated elements and attributes.
-3. Frameset DTD: This is used for documents containing frames.
+
+```xml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Strict DTD Example</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+
+3. Transitional DTD: This allows deprecated elements and attributes.
+
+```xml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Transitional DTD Example</title>
+  </head>
+  <body>
+    <center>This tag is deprecated element.</center>
+  </body>
+</html>
+```
+
+5. Frameset DTD: This is used for documents containing frames.
+
+```xml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Frameset DTD Example</title>
+  </head>
+  <frameset rows="50%,50%">
+    <frame src="frame1.html" />
+    <frame src="frame2.html" />
+  </frameset>
+</html>
+
+```
 
 ---
 ## Elements, Tags, Attributes and Layout
