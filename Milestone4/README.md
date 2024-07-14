@@ -164,11 +164,34 @@ Sass String functions:
 
 Sass mixin used to define reusuable styling components.
 
-## Sass @extend
+```scss
+@mixin theme($theme: DarkGray) {
+  background: $theme;
+  color: #fff;
+}
+
+.alert {
+  @include theme($theme: DarkRed);
+}
+.success {
+  @include theme($theme: DarkGreen);
+}
+```
+
+## Sass @extend / Inheritance
 
 The @extend directive lets you share a set of CSS properties from one selector to another.
 
+```scss
+%message-shared {
+  border: 1px solid #ccc;
+}
 
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+```
 ---
 
 ## Sass String Functions
@@ -723,9 +746,11 @@ Flexbox has 2 components
 ### flex-direction
 
 - flex-direction: row
+  
 ![Screenshot 2024-07-14 123908](https://github.com/user-attachments/assets/d0296b69-b71e-4231-9347-7b0d6722488a)
 
 - flex-direction: column
+  
    ![Screenshot 2024-07-14 123938](https://github.com/user-attachments/assets/c2ca1151-2dd5-4bac-82cb-20aa542484df)
 
 - flex-direction: row-reverse
