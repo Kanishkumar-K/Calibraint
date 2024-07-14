@@ -318,7 +318,18 @@ A NodeList represents a list of nodes in an HTML document.
 ---
 # Event Bubbling, Event Delegation, Propagation, and Preventing Default
 
-## Event Bubbling
+## Event Propagation
+
+Event propagation refers to the flow of events through the DOM tree. Events can propagate in two phases: capturing phase and bubbling phase.
+
+```javascript
+document.getElementById('parentElement').addEventListener('click', function(event) {
+    console.log('Event captured and bubbling:', event.target.nodeName);
+}, true); // true for capturing phase
+```
+## Event Capturing - (Parent to child)
+
+## Event Bubbling - (Child to parent)
 
 Event bubbling is the phenomenon where an event triggered on a nested element "bubbles" up through its ancestors in the DOM tree.
 
@@ -342,15 +353,6 @@ document.getElementById('parentElement').addEventListener('click', function(even
         console.log('Child element clicked:', event.target.textContent);
     }
 });
-```
-## Event Propagation
-
-Event propagation refers to the flow of events through the DOM tree. Events can propagate in two phases: capturing phase and bubbling phase.
-
-```javascript
-document.getElementById('parentElement').addEventListener('click', function(event) {
-    console.log('Event captured and bubbling:', event.target.nodeName);
-}, true); // true for capturing phase
 ```
 
 ## Preventdefault():
