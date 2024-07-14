@@ -5,6 +5,8 @@ HTML lists allows to group a set of related items one by one.
 
 An unordered list is a list of items where the order of the items does not matter. It is represented by the ul tag.
 
+Values: circle, disc, square
+
 ```html
 <ul>
     <li>Apples</li>
@@ -15,6 +17,8 @@ An unordered list is a list of items where the order of the items does not matte
 ## Ordered List
 
 An ordered list is a list of items where each item is sequentially numbered. It is represented by the ol tag.
+
+Values: 1 (default), A, a, I, i
 
 ```html
 <ol>
@@ -37,6 +41,7 @@ A description list consists of terms and their associated descriptions. It is re
     <dd>JavaScript</dd>
 </dl>
 ```
+
 
 # 2. HTML Forms
 
