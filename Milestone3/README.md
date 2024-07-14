@@ -239,6 +239,10 @@ Accessibility in HTML involves using semantic HTML, ARIA (Accessible Rich Intern
 | `aria-required`   | Indicates that user input is required before submission.                          |
 | `aria-selected`   | Indicates the current "selected" state of various widgets.                        |
 
+Example
+
+    <header aria-label="Main Header"><h1>Title</h1></header>
+
 ---
 
 ## 5. SEO
