@@ -633,13 +633,29 @@ img {
 ```
 
 ## 2. Image Border
-Provides border to the image (Ex. 2px solid black)
+Provides border to the image
+
+    .image {
+      border: 5px solid black;
+    }
+
 
 ## 3. Image Display options
-Provides various display options for image (display: block;)
+Provides various display options for image
+
+    .image {
+      display: block;
+      margin: 10px;
+      padding: 15px;
+    }
+
 
 ## 4. Image Shadow
-Adds a shadow effect to image ( box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); )
+Adds a shadow effect to image
+
+    .image {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
 
 ---
 
