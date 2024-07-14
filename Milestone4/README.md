@@ -524,11 +524,11 @@ Example:
 
 ```css
 h1 {
-  font-size: 2.5em; /* 40px / 16px = 2.5em */
+  font-size: 2.5em; 
 }
 
 p {
-  font-size: 0.875em; /* 14px / 16px = 0.875em */
+  font-size: 0.875em; 
 }
 
 ```
