@@ -77,7 +77,9 @@ A pseudo-class is used to define a special state of an element.
 | Pseudo-Class      | Description                                                              | Example                                                  |
 |-------------------|--------------------------------------------------------------------------|----------------------------------------------------------|
 | `:hover`          | Applies when cursor moves to the element, but does not activate it. | ```button:hover { background-color: yellow; }``` |
-| `:active`         | Applies while an element is being activated by the user.                | ```a:active { color: red; }<br>```                 |
+| `:active`         | Applies while an element is being activated by the user.                | ```a:active { color: red; }```                 |
+| `:link`           | Applies to links that have not yet been visited by the user.              | `a:link { color: blue; }`                                 |
+| `:visited`        | Applies to links that have been visited by the user.                      | `a:visited { color: purple; }`                             |
 | `:first-child`    | Applies to the first child of its parent.                                | ```p:first-child { font-weight: bold; }```     |
 | `:last-child`     | Applies to the last child of its parent.                                 | ```p:last-child { color: green; }```           |
 | `:root`           | Applies to the root element of a document.                               | ```:root { --main-color: coral; }```           |
@@ -179,23 +181,20 @@ CSS functions are used as a value for various CSS properties.
 
 | Function                      | Description                                                              |
 |-------------------------------|--------------------------------------------------------------------------|
-| `attr()`                      | Returns the value of an attribute of the selected element                |
+| `max()`                       | Uses the largest value, as the property value |
+| `min()`                       | Uses the smallest value, as the property value |
 | `calc()`                      | Allows you to perform calculations to determine CSS property values      |
-| `conic-gradient()`            | Creates a conic gradient                                                 |
 | `counter()`                   | Returns the current value of the named counter                           |
-| `cubic-bezier()`              | Defines a Cubic Bezier curve                                             |
+| `rgb()`                       | Defines colors using the Red-Green-Blue model (RGB)                      |
 | `hsl()`                       | Defines colors using the Hue-Saturation-Lightness model (HSL)            |
 | `hsla()`                      | Defines colors using the Hue-Saturation-Lightness-Alpha model (HSLA)     |
 | `linear-gradient()`           | Creates a linear gradient                                                |
-| `max()`                       | Uses the largest value, as the property value |
-| `min()`                       | Uses the smallest value, as the property value |
+| `conic-gradient()`            | Creates a conic gradient                                                 |
 | `radial-gradient()`           | Creates a radial gradient                                                |
 | `repeating-conic-gradient()`  | Repeats a conic gradient                                                 |
 | `repeating-linear-gradient()` | Repeats a linear gradient                                                |
 | `repeating-radial-gradient()` | Repeats a radial gradient                                                |
-| `rgb()`                       | Defines colors using the Red-Green-Blue model (RGB)                      |
-| `rgba()`                      | Defines colors using the Red-Green-Blue-Alpha model (RGBA)               |
-| `var()`                       | Inserts the value of a custom property                                   |
+
 
 ---
 
@@ -207,8 +206,6 @@ Comments in CSS can be used to explain code, make notes, or temporarily disable 
 
 ```css
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     /* margin: 0; */
 }
 ```
