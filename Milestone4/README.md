@@ -111,7 +111,7 @@ p {
 O/p: Green has scope limited to h1 tag only.
 
 
-Sass !global:
+## Sass !global:
 
 !global indicates that a variable is global, which means that it is accessible on all levels.
 
@@ -696,5 +696,76 @@ The CSS `display` property determines how an element behaves in the document lay
   display: block;
 }
 ```
+
+---
+
+## CSS Flexbox
+
+Flexbox is used to craete flexible layout structures.
+
+Flexbox has 2 components
+ - Flex container (Outer box)
+ - Flex items (Elements inside the container)
+
+### Main Axis:
+  It is the primary axis.
+
+### Cross Axis:
+  The cross axis is perpendicular to the main axis.
+  
+-  If flex-direction is row, main axis is row, cross axis is column
+-  If flex-direction is column, main axis is column, cross axis is row
+
+---
+
+## Flexbox properties:
+
+### flex-direction
+
+- flex-direction: row
+![Screenshot 2024-07-14 123908](https://github.com/user-attachments/assets/d0296b69-b71e-4231-9347-7b0d6722488a)
+
+- flex-direction: column
+   ![Screenshot 2024-07-14 123938](https://github.com/user-attachments/assets/c2ca1151-2dd5-4bac-82cb-20aa542484df)
+
+- flex-direction: row-reverse
+![Screenshot 2024-07-14 123959](https://github.com/user-attachments/assets/4850e5c0-7ee6-40c1-846f-80caba6414c9)
+
+---
+
+### flex wrap:
+
+Allow us to wrap the items in a single line or multiple lines
+
+### flex grow:
+
+ flex-grow determines how much a flex item should grow relative to the other
+
+![Screenshot 2024-07-14 124655](https://github.com/user-attachments/assets/a7a0d8f7-8b27-4af7-9649-34521881efc8)
+
+### flex basis:
+
+Sets the initial size of flex items
+
+![Screenshot 2024-07-14 125256](https://github.com/user-attachments/assets/8b12cc30-f8a0-40a4-b3cf-42233066d795)
+
+
+---
+
+## Justify content (If row is main axis)
+
+justify-content : flex start | flex end | space between | space around;
+
+  
+![Screenshot 2024-07-14 124332](https://github.com/user-attachments/assets/de1b8bee-9d01-4748-beb8-6aaa5674edea)
+
+
+## Align Items (If column is main axis)
+
+align items: flex-start | flex-end | baseline | initial | inherit;
+
+![Screenshot 2024-07-14 125448](https://github.com/user-attachments/assets/bebb75df-df8e-48b5-8e65-6768d57888b8)
+
+
 
 
