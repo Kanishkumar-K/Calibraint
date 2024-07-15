@@ -73,3 +73,63 @@ Time to Live (TTL) refers to the lifespan of a packet within a network, specifyi
 Cache hit ratio is a measurement of how many requests a cache is able to hit successfully, compared to how many requests it receives.
 
 Cache Hit Ratio = Number of Cache Hits / ( Number of Cache Hits + Number of Cache Misses)
+
+---
+
+## Cache
+
+Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly.
+
+## Static Caching
+
+Static caching involves storing copies of files that rarely change, such as images, CSS file, and HTML documents, on edge servers.
+
+## Dynamic Caching
+
+Dynamic caching involves caching content that is generated dynamically based on user interactions or real-time data. 
+This can include database queries, API responses, personalized content, and pages that change frequently.
+
+---
+
+## CDN Security 
+
+### DDoS attack
+
+A Distributed Denial of Service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service, or network by overwhelming it with a flood of internet traffic.
+
+## SSL/ TLS Security:
+
+CDNs (Content Delivery Networks) improve SSL/TLS security for websites by:
+1. **Handling Encryption**: They manage SSL/TLS encryption between users and their servers, ensuring secure data transmission.
+   
+2. **Certificate Management**: CDNs handle SSL/TLS certificates, making sure they are valid and up-to-date, which simplifies setup for website owners.
+
+3. **Protecting Against Attacks**: CDNs provide security features that defend against threats like DDoS attacks, safeguarding websites' SSL/TLS connections.
+
+## TLS protocol:
+
+Authentication: Verifying identities to confirm they are genuine.
+Encryption: Transforming data to make it unreadable to unauthorized parties.
+Integrity: Ensuring data remains accurate and unchanged from its original form.
+
+## SSL Certificate
+
+An SSL (Secure Sockets Layer) certificate is a digital certificate that authenticates the identity of a website and enables secure encrypted connections between a web browser and a web server
+
+---
+
+## TCP/ IP handshake:
+
+The TCP/IP handshake is needed to establish a reliable and secure connection between two devices or systems before they can start exchanging data. 
+
+1. **SYN (Synchronize)**:
+   Client initiates by sending a SYN packet to the server to start a connection.
+   
+3. **SYN-ACK (Synchronize-Acknowledge)**:
+   Server responds with a SYN-ACK packet, acknowledging the client's SYN and synchronizing connection parameters.
+
+5. **ACK (Acknowledgment)**:
+   Client sends an ACK packet to confirm receipt of the server's SYN-ACK, establishing the connection for data exchange.
+
+---
+
