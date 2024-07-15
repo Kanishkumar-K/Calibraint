@@ -706,10 +706,6 @@ The CSS `display` property determines how an element behaves in the document lay
 
 - **`list-item`**: Renders the element as a block container with a list-item box inside (e.g., `<li>`).
 
-- **`inherit`**: Inherits the `display` value from its parent element.
-
-- **`initial`**: Sets the `display` property to its default value.
-
 
 ### Example:
 
