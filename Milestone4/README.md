@@ -710,7 +710,6 @@ The CSS `display` property determines how an element behaves in the document lay
 
 - **`initial`**: Sets the `display` property to its default value.
 
-- **`unset`**: Resets the `display` property to its inherited value if it inherits from its parent, otherwise sets it to its initial value.
 
 ### Example:
 
