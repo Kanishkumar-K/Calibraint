@@ -713,6 +713,28 @@ The CSS `display` property determines how an element behaves in the document lay
 .element {
   display: block;
 }
+
+.element {
+  display: inline;
+}
+
+.element {
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.table-element {
+  display: table;
+}
+
+
 ```
 
 ---
