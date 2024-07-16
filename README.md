@@ -11,4 +11,3 @@ This repository contains Milestone 1 to Milestone 6
 [Milestone 5](https://github.com/Kanishkumar-K/HTML-CSS-Milestones/tree/main/Milestone5)
 
 [Milestone 6](https://github.com/Kanishkumar-K/HTML-CSS-Milestones/tree/main/Milestone6)
-<a href="https://github.com/Kanishkumar-K/HTML-CSS-Milestones/tree/main/Milestone6" target="_blank">Milestone 6</a>
