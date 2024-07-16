@@ -135,6 +135,8 @@ The TCP/IP handshake is needed to establish a reliable and secure connection bet
 
 # Bootstrap
 
+Bootstrap is a CSS framework which includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+
 Depolyed landing page site link: https://xyz-travels.netlify.app/
 
   ```html
