@@ -171,29 +171,6 @@ The `<caption>` element provides a title or caption for the table, giving a brie
 <caption>Table Title</caption>
 ```
 
-## `<colgroup>`
-
-The `<colgroup>` element is used to group one or more `<col>` elements, which define the column properties for the table.
-```html
-<colgroup>
-    <col span="2" style="background-color: #f2f2f2;">
-</colgroup>
-```
-
-## `<col>`
-
-The `<col>` element specifies column properties for each column within a `<colgroup>`. It is used to apply styles or attributes to entire columns.
-```html
-<col span="2" style="background-color: #f2f2f2;">
-```
-
-## Attributes
-```html
-<thead>
-    <tr><th>Header 1</th><th>Header 2</th></tr>
-</thead>
-```
-
 ### `colspan`
 
 The `colspan` attribute allows a `<td>` or `<th>` element to span multiple columns.
