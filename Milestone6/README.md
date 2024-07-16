@@ -137,6 +137,7 @@ The TCP/IP handshake is needed to establish a reliable and secure connection bet
 
 Depolyed landing page site link: https://xyz-travels.netlify.app/
 
+  ```html
     <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -359,7 +360,7 @@ Depolyed landing page site link: https://xyz-travels.netlify.app/
     </footer>
     </body>
     </html>
- 
+  ```
 
 
 
@@ -379,5 +380,141 @@ Utilized,
 - Display and Heading text
 
   ---
+
+  # Tailwind CSS
+
+  A utility-first CSS framework for rapidly building custom user interfaces
+
+  
+  ## Source code
+
+```html
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Dev-Connect.</title> 
+
+	<link href= "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
+<style>
+    .s3{
+        padding-left: 900px;
+        margin-top: -300px;
+    
+    }
+</style>
+</head> 
+
+<body class="bg-orange-100">
+
+    <nav class="fixed  top-0 left-0 w-full bg-black">
+        <div>
+            <ul class="px-5 py-3 bg-black 	">
+                <li class="inline px-3 text-white"><a href="#home">Home</a></li>
+                <li class="inline px-3 text-white"><a href="#about">About</a></li>
+                <li class="inline px-3 text-white"><a href="#contacts">Contacts</a></li>
+                <li class="inline px-3 text-white"><a href="#services">Services</a></li>           
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <br />
+
+    <section id="#home">
+        <div>
+            <br />
+            <br />
+            <h1 class="text-center text-4xl text-bold font-serif">Dev-Connect.</h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="px-20 text-justify py-5 text-xl">Welcome to DevConnect, the ultimate platform where passionate developers converge to share knowledge, collaborate on projects, and advance their skills. At DevConnect, we believe in the power of community and the boundless potential of technology when driven by a collective of skilled and innovative minds. Wanna join us and Share?</h2>
+    </section>
+    <div class="flex">
+    <div class="rounded-lg p-6 m-6 border-4 bg-indigo-100 max-w-xs">
+        <img class="rounded-full h-20 w-20"  src="1.png"><br />
+        <h2 class="font-medium">Name: Asher</h2>
+        <div>Designation: Angular developer</div>
+        <div>Email: asher@gmail.com</div>
+        <div>Phone: +91 9089283388</div>
+        <br />
+        <button class="mx-auto border py-1 px-8 bg-green-500 text-white">Connect with me</button>
+    </div>
+
+    <div class="rounded-lg p-6 m-6 border-4 bg-indigo-100 max-w-xs ">
+        <img class="rounded-full h-20 w-20"  src="2.png"><br />
+        <h2 class="font-medium">Name: Avesh</h2>
+        <div>Designation: PHP developer</div>
+        <div>Email: avesh@gmail.com</div>
+        <div>Phone: +91 9089283380</div>
+        <br />
+        <button class="mx-auto border py-1 px-8 bg-green-500 text-white">Connect with me</button>
+    </div>
+
+    <div class="rounded-lg p-6 m-6 border-4 bg-indigo-100 max-w-xs ">
+        <img class="rounded-full h-20 w-20"  src="3.png"><br />
+        <h2 class="font-medium">Name: Andrew</h2>
+        <div>Designation: UX designer</div>
+        <div>Email: andrew@gmail.com</div>
+        <div>Phone: +91 9089283381</div>
+        <br />
+        <button class="mx-auto border py-1 px-8 bg-green-500 text-white">Connect with me</button>
+    </div>
+
+    <div class="rounded-lg p-6 m-6 border-4 bg-indigo-100 max-w-xs ">
+        <img class="rounded-full h-20 w-20"  src="4.jpg"><br />
+        <h2 class="font-medium">Name: Amari</h2>
+        <div>Designation: React Developer</div>
+        <div>Email: amari@gmail.com</div>
+        <div>Phone: +91 9089283382</div>
+        <br />
+        <button class="mx-auto border py-1 px-8 bg-green-500 text-white">Connect with me</button>
+    </div>
+
+    <div class="rounded-lg p-6 m-6 border-4 bg-indigo-100 max-w-xs ">
+        <img class="rounded-full h-20 w-20"  src="5.png"><br />
+        <h2 class="font-medium">Name: Adam</h2>
+        <div>Designation: MERN developer</div>
+        <div>Email: adam@gmail.com</div>
+        <div>Phone: +91 9089283389</div>
+        <br />
+        <button class="mx-auto border py-1 px-8 bg-green-500 text-white">Connect with me</button>
+    </div>
+</div>
+<br />
+<section id="services">
+<img class="p-8" src="img.jpg" height="400px" width="800px">
+</section>
+
+<section class = "s3">
+    <h1 class="text-2xl font-bold mb-4 ">Wanna Join ?</h1>
+    <p class="text-gray-700 mb-4">Sign Up and connect with other developers and develop more...</p>
+    <button class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Sign Up</button>
+</section>
+
+    <br />
+    <br />
+    <br />
+<section id="contacts">
+    <br />
+    <br />
+    <br />
+    <footer class="bg-black text-white p-7 py-3 text-center">
+        <p>All rights reserved. Copyrights &copy; 2024</p>
+    </footer>
+    </section>
+
+</body>
+</html>
+```
+
+## Output Images:
+
+![image](https://github.com/user-attachments/assets/fa54f7b2-e6b4-47bf-ad5a-90aa2f65df12)
+
+![image](https://github.com/user-attachments/assets/897564a5-515f-49ec-b419-a11eeef3b56f)
+
+
 
   
