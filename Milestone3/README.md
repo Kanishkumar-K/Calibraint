@@ -299,12 +299,11 @@ Helps search engines understand the context of your content, which can enhance s
 Retrieve the geographic location of a user.
 
   ```html
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-        console.log("Latitude: " + position.coords.latitude);
-        console.log("Longitude: " + position.coords.longitude);
-    });
-} 
+function showLocation() {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
+            });
+        }
   ```
 
 ## 2. Drag and Drop API
