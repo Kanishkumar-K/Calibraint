@@ -184,7 +184,6 @@ CSS functions are used as a value for various CSS properties.
 | `max()`                       | Uses the largest value, as the property value |
 | `min()`                       | Uses the smallest value, as the property value |
 | `calc()`                      | Allows you to perform calculations to determine CSS property values      |
-| `counter()`                   | Returns the current value of the named counter                           |
 | `rgb()`                       | Defines colors using the Red-Green-Blue model (RGB)                      |
 | `hsl()`                       | Defines colors using the Hue-Saturation-Lightness model (HSL)            |
 | `hsla()`                      | Defines colors using the Hue-Saturation-Lightness-Alpha model (HSLA)     |
