@@ -237,7 +237,6 @@ The list functions are used to access values in a list, combine lists, and add i
 |---------------------------------|------------------------------------------------------|----------------------------------------------|-------------------------------|
 | `append(list, value, [separator])` | Adds a value to the end of the list. Separator can be `auto`, `comma`, or `space`. | `append((a b c), d)`                         | `a b c d`                     |
 | `index(list, value)`            | Returns the index of the value in the list.          | `index(a b c, b)`                            | `2`                           |
-| `is-bracketed(list)`            | Checks if the list has square brackets.              | `is-bracketed([a b c])`                      | `true`                        |
 | `length(list)`                  | Returns the length of the list.                      | `length(a b c)`                              | `3`                           |
 | `list-separator(list)`          | Returns the list separator used, as a string.        | `list-separator(a b c)`                      | `"space"`                     |
 
@@ -267,12 +266,12 @@ It has the following properties
     @extend
     Nesting
 
-| Feature         | SCSS                                      | Sass                                     |
-|-----------------|-------------------------------------------|------------------------------------------|
-| Syntax          | Uses curly braces `{}` and semicolons `;` | Uses indentation to separate code blocks |
-| Compatibility   | Every valid CSS file is a valid SCSS file | Requires specific Sass syntax            |
-| Readability     | Similar to standard CSS                   | More concise, fewer characters to write  |
-| File Extension  | `.scss`                                   | `.sass`                                  |
+| SCSS                                      | Sass                                     |
+|-------------------------------------------|------------------------------------------|
+| Uses curly braces `{}` and semicolons `;` | Uses indentation to separate code blocks |
+| Every valid CSS file is a valid SCSS file | Requires specific Sass syntax            |
+| Similar to standard CSS                   | More concise, fewer characters to write  |
+| `.scss`                                   | `.sass`                                  |
 
 
 ## 4. CSS Properties
@@ -294,7 +293,7 @@ In CSS, `height` and `width` are properties used to define the dimensions of an 
 **Example:**
 ```css
 .element {
-    height: 200px; /* Fixed height in pixels */
+    height: 200px; 
 }
 ```
 
@@ -303,8 +302,7 @@ In CSS, `max-height` specifies the maximum height an element can take before it 
 
 ```css
 .element {
-    max-height: 300px; /* Set maximum height */
-    overflow: auto;    /* Add scrollbars if content overflows */
+    max-height: 300px; 
 }
 ```
 
@@ -312,19 +310,12 @@ In CSS, `max-height` specifies the maximum height an element can take before it 
 ## Width
 
 - **Syntax of Width**: `width: value;`
-- 
-- **Values**:
-- 
-  - `auto`: Default value, element height adjusts based on content.
-  - `px`: Specifies height in pixels.
-  - `%`: Specifies height as a percentage of the parent element's height.
-  - `em`, `rem`: Relative units based on font-size.
-  - `vw`: Viewport Width (1vh = 1% of the viewport width).
 
+  
 **Example:**
 ```css
 .element {
-    width: 200px; /* Fixed height in pixels */
+    width: 200px; 
 }
 ```
 
@@ -335,7 +326,7 @@ In CSS, `max-width` specifies the maximum width an element can take before it st
 
 ```css
 .element {
-    max-width: 600px; /* Limits the width to 600 pixels */
+    max-width: 600px; 
 }
 ```
 
@@ -437,6 +428,7 @@ The CSS box model describes the space that surrounds an HTML element, including 
 
 4. **Margin**: Clears an area outside the border. The margin is transparent.
    <br />
+   
 <p align="center">
   <img src="https://github.com/user-attachments/assets/54759d97-671d-479c-9cff-2b5c0bb546ea" width="600" height="400" />
 </p>
@@ -514,7 +506,6 @@ Web safe fonts are fonts that are widely available across different operating sy
 - Arial
 - Times New Roman
 - Georgia
-- Verdana
 
 ---
 
