@@ -343,7 +343,9 @@ Bootstrap is a CSS framework which includes HTML and CSS based design templates 
 
 ![image](https://github.com/user-attachments/assets/b66add63-0abb-498f-a2ca-1c98eed11632)
 
+
 ![image](https://github.com/user-attachments/assets/48387332-f9ae-461c-a2a5-301371b5bee4)
+
 
 ![image](https://github.com/user-attachments/assets/61c8ab1d-b79e-423a-a123-b46db5c48a3e)
 
@@ -496,6 +498,7 @@ Utilized,
 ## Output Images:
 
 ![image](https://github.com/user-attachments/assets/fa54f7b2-e6b4-47bf-ad5a-90aa2f65df12)
+
 
 ![image](https://github.com/user-attachments/assets/897564a5-515f-49ec-b419-a11eeef3b56f)
 
