@@ -191,10 +191,17 @@ CSS functions are used as a value for various CSS properties.
 | `linear-gradient()`           | Creates a linear gradient                                                |
 | `conic-gradient()`            | Creates a conic gradient                                                 |
 | `radial-gradient()`           | Creates a radial gradient                                                |
-| `repeating-conic-gradient()`  | Repeats a conic gradient                                                 |
-| `repeating-linear-gradient()` | Repeats a linear gradient                                                |
-| `repeating-radial-gradient()` | Repeats a radial gradient                                                |
 
+
+## Example:
+
+```css
+
+.class1 {
+width: calc(100% - 100px);
+}
+
+```
 
 ---
 
