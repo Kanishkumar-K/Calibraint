@@ -214,10 +214,7 @@ Accessibility in HTML involves using semantic HTML, ARIA (Accessible Rich Intern
 | `aria-hidden`     | Indicates whether an element is visible or hidden.                                |
 | `aria-disabled`   | Indicates that an element is perceivable but disabled.                            |
 | `aria-expanded`   | Indicates whether an element is expanded or collapsed.                            |
-| `aria-haspopup`   | Indicates the availability and type of interactive popup element.                 |
-| `aria-invalid`    | Indicates the entered value does not conform to the expected format.              |
 | `aria-orientation`| Indicates whether the element's orientation is horizontal, vertical, or undefined.|
-| `aria-readonly`   | Indicates that the element is not editable, but is otherwise operable.            |
 | `aria-required`   | Indicates that user input is required before submission.                          |
 | `aria-selected`   | Indicates the current "selected" state of various widgets.                        |
 
