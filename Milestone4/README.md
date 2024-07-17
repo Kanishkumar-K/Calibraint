@@ -372,7 +372,7 @@ The background peroperty adds background effects to the element
 - **Example**: 
   ```css
   .example {
-      background-color: #f0f0f0; /* Light gray background */
+      background-color: #f0f0f0; 
   }
   ```
 
@@ -381,7 +381,7 @@ The background peroperty adds background effects to the element
 - **Example**: 
 ```css
 .example {
-    background-image: url('background.jpg'); /* Sets a background image */
+    background-image: url('background.jpg'); 
 }
  ```
       
@@ -390,7 +390,7 @@ The background peroperty adds background effects to the element
 - **Example**: 
 ```css
 .example {
-    background-repeat: no-repeat; /* Prevents background image from repeating */
+    background-repeat: no-repeat; 
 }
  ```
 
@@ -399,7 +399,7 @@ The background peroperty adds background effects to the element
 - **Example**: 
 ```css
 .example {
-    background-attachment: fixed; /* Fixes the background image in place */
+    background-attachment: fixed; 
 }
  ```
 
@@ -407,7 +407,7 @@ The background peroperty adds background effects to the element
 - **Definition**: Sets the starting position of background images.
 ```css
 .example {
-    background-position: center top; /* Positions background image at the top center */
+    background-position: center top; 
 }
 ```
 
