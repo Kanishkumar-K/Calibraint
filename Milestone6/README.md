@@ -137,36 +137,21 @@ The TCP/IP handshake is needed to establish a reliable and secure connection bet
 
 Bootstrap is a CSS framework which includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
 
-Depolyed landing page site link: https://xyz-travels.netlify.app/
 
   ```html
-    <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Travel Agency Landing Page</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            <style>
-                .carousel-item {
-                    height: 730px; 
-                }
 
-        .carousel-item img {
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .carousel-caption {
-            top: 50%;
-            transform: translateY(-50%);
-            bottom: initial;
-        }
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
         .lead{
             text-align: justify;
             padding-left: 80px;
@@ -190,13 +175,26 @@ Depolyed landing page site link: https://xyz-travels.netlify.app/
             font-style: normal;
           }
 
+        .display-1, .s5{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);        
+        }
+
+        .s5{
+          padding-top: 200px;
+          color: rgb(255, 255, 255);
+        }
+
         .s1{
         padding-left: 980px;
+        font-family: 'Tahoma';
         }
 
     </style>
-    </head>
-      <body>
+</head>
+<body>
     
     <!-- Bootstrap Navbar  -->
 
@@ -218,40 +216,9 @@ Depolyed landing page site link: https://xyz-travels.netlify.app/
         </div>
     </nav>
 
-    <!-- Bootstrap Carousal -->
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="display-1">XYZ Travel Agency</h1>  
-              <h5>We turn your travel dreams into reality. Whether you're seeking a tranquil beach escape, an adventurous mountain trek, or a cultural city tour, we offer personalized travel experiences that cater to all your desires.</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="display-1">XYZ Travel Agency</h1>
-              <h5>Our expert team is dedicated to crafting unique and unforgettable journeys tailored to your interests and budget.</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-        <br />
-
+    <img src="image1.jpg" class="img-fluid" alt="Responsive image" width="100%">
+    <h2 class="display-1" style="color:rgb(255, 255, 255); font-weight:500; font-size: 90px">XYZ Travel Agency</h1>   
+      <h1 class="s5">Explore the world with us.</h1>
 
       <!-- Bootstrap lead and display headings -->
       <section id="about-us">   
@@ -266,31 +233,37 @@ Depolyed landing page site link: https://xyz-travels.netlify.app/
         <br />
       </section>
 
+      <img src="image3.jpg" height="500px" style="padding-left: 600px; padding-bottom:80px">
+
+
+      <!-- Bootstrap Cards -->
+      <section>
+        <div class="container" style="padding-left:80px; padding-bottom:40px; margin-top:-470px;">
+            <div class="card" style="width: 20rem; margin-bottom: 1rem;">
+                <div class="card-body">
+                    <h5 class="card-title">India</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione consequatur esse sed labore?</p>
+                    <a href="#" class="card-link">View more</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem; margin-bottom: 1rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Australia</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione consequatur esse sed labore?</p>
+                    <a href="#" class="card-link">View more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+
 <!-- Bootstrap Footer -->
 
-      <footer class="text-center text-lg-start  bg-dark text-light">
-          <section class="d-flex justify-content-center justify-content-lg-between">
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </section>
+<footer class="text-center text-lg-start  bg-dark text-light">
+  <br />
   
     <section class="">
       <div class="container text-center text-md-start mt-5">
@@ -359,27 +332,31 @@ Depolyed landing page site link: https://xyz-travels.netlify.app/
       © 2024 Copyright:
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">xyztravels.com</a>
     </div>
-    </footer>
-    </body>
-    </html>
+  </footer>
+</body>
+</html>
+
+
   ```
 
+## Output Images:
 
+![image](https://github.com/user-attachments/assets/b66add63-0abb-498f-a2ca-1c98eed11632)
 
-![image](https://github.com/user-attachments/assets/abbcf264-90a3-4eab-b7f6-506c019efe47)
+![image](https://github.com/user-attachments/assets/48387332-f9ae-461c-a2a5-301371b5bee4)
 
-![image](https://github.com/user-attachments/assets/1d0aed22-ca84-46f6-870a-7d7d1d6691dd)
+![image](https://github.com/user-attachments/assets/61c8ab1d-b79e-423a-a123-b46db5c48a3e)
 
 
 Utilized,
 
-- Bootstrap Carousal
+- Cards
 - Typography
-- Navbar
 - Footer
 - Button
 - Lead element
 - Display and Heading text
+
 
 
 
